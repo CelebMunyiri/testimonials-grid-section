@@ -8,14 +8,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color:  hsl(0, 0%, 81%);;
 }
 .container{
-    height: 90%;
-    width: 70%;
-    border: 1px solid blue;
-    /* position: absolute; */
-    /* top: 30px; */
-    display: grid;
+    height: 94%;
+    width: 85%;
+   display: grid;
      grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 15px;
@@ -25,22 +23,41 @@ body{
     display: flex;
     gap:5px;
 }
+p{
+color: hsl(0, 0%, 81%);
+}
 .one{
+    background:  hsl(263, 55%, 52%) ;
     grid-area: one;
-    border: 1px solid red;
+    border-radius: 20px;
+    
 }
 .two{
+    background-color: hsl(217, 19%, 35%);
     grid-area: two;
-    border: 2px solid green;
+    border-radius: 20px;
 }
 .three{
+    border-radius: 20px;
     grid-area: three;
+    background-color: hsl(210, 46%, 95%);
 }
 .four{
+    border-radius: 20px;
+    background-color: hsl(210, 46%, 95%);
     grid-area: four;
 }
+.three h3{
+    color:hsl(217, 19%, 35%) ;
+}
+.four h3{
+    color:hsl(217, 19%, 35%) ;
+    
+}
 .five{
+    border-radius: 20px;
     grid-area: five;
+    background-color:  hsl(219, 29%, 14%);
 } 
 img{
     border-radius: 50%;
