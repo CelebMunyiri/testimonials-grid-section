@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 90%;
+    width: 70%;
+    border: 1px solid blue;
+    /* position: absolute; */
+    /* top: 30px; */
+    display: grid;
+     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+    grid-template-areas: "one one two three " "four five five three"; 
+}
+.profile{
+    display: flex;
+    gap:5px;
+}
+.one{
+    grid-area: one;
+    border: 1px solid red;
+}
+.two{
+    grid-area: two;
+    border: 2px solid green;
+}
+.three{
+    grid-area: three;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+} 
+img{
+    border-radius: 50%;
+}
