@@ -12,7 +12,7 @@ body{
 }
 .container{
     height: 94%;
-    width: 85%;
+    width: 75%;
    display: grid;
      grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
