@@ -8,8 +8,21 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:  hsl(0, 0%, 81%);;
+    background-color:  hsl(0, 0%, 81%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+font-family: 'Inter', sans-serif;
+font-family: 'Outfit', sans-serif;
 }
+h4{
+    font-weight: 500;
+}
+p{
+    font-weight: 200;
+}
+h3{
+    font-weight: 700;
+}
+
 .container{
     height: 94%;
     width: 75%;
@@ -98,4 +111,16 @@ opacity: 70%;
 .four p{
     color:hsl(217, 19%, 35%) ;
     opacity: 70%;
+}
+@media screen and (max-width:360px){
+.container{
+    width: 100vw;
+    height: 100vh;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(5,1fr);
+    grid-template-areas: "one""two""four""five""three";
+}
+
 }
